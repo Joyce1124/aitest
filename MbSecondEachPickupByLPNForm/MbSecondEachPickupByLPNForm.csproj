@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2144DF43-CBFF-4BAD-9987-F86E295EB9FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MbSecondEachPickupByLPNForm</RootNamespace>
+    <AssemblyName>MbSecondEachPickupByLPNForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\dist\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\dist\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="bbbt.WMS.InventoryManageService, Version=3.1.5.8211, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dist\bbbt.WMS.InventoryManageService.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CellsControl\BaseCellControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CellsControl\BaseCellControl.Designer.cs">
+      <DependentUpon>BaseCellControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CellsControl\TwoHundredCellsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CellsControl\TwoHundredCellsControl.Designer.cs">
+      <DependentUpon>TwoHundredCellsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CellsControl\OneoHundredFiftyCellsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CellsControl\OneoHundredFiftyCellsControl.Designer.cs">
+      <DependentUpon>OneoHundredFiftyCellsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CellsControl\OneoHundredCellsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CellsControl\OneoHundredCellsControl.Designer.cs">
+      <DependentUpon>OneoHundredCellsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeWallDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeWallDia.Designer.cs">
+      <DependentUpon>ChangeWallDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionRecordDiaForSecondPickup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionRecordDiaForSecondPickup.Designer.cs">
+      <DependentUpon>ExceptionRecordDiaForSecondPickup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifySkuQtyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifySkuQtyDialog.Designer.cs">
+      <DependentUpon>ModifySkuQtyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScanDetailDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanDetailDia.Designer.cs">
+      <DependentUpon>ScanDetailDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanPickupCarDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanPickupCarDia.Designer.cs">
+      <DependentUpon>ScanPickupCarDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanWallDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanWallDia.Designer.cs">
+      <DependentUpon>ScanWallDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondEachPickupByLPNForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondEachPickupByLPNForm.Designer.cs">
+      <DependentUpon>SecondEachPickupByLPNForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupScanRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupScanRate.Designer.cs">
+      <DependentUpon>SetupScanRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetupDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetupDialog.Designer.cs">
+      <DependentUpon>SetupDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetupInfo.cs" />
+    <Compile Include="ThrowErrorDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThrowErrorDia.Designer.cs">
+      <DependentUpon>ThrowErrorDia.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bbbt.BaseForm\bbbt.Base.csproj">
+      <Project>{4695dfb7-e6a7-44cb-841b-26cba30d8ff0}</Project>
+      <Name>bbbt.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.ControlLibrary.Winform\bbbt.ControlLibrary.Winform.csproj">
+      <Project>{08b81248-3746-4b8d-82bd-5de69534ffc6}</Project>
+      <Name>bbbt.ControlLibrary.Winform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.Dialog\bbbt.Dialog.csproj">
+      <Project>{05a97b6d-8f14-45b7-8a73-ef8d567bf35a}</Project>
+      <Name>bbbt.Dialog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.Tools\bbbt.Tool.csproj">
+      <Project>{619503c1-4dc4-4f6b-ab5f-ebac66158430}</Project>
+      <Name>bbbt.Tool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.Utility.WinForm\bbbt.Utility.WinForm.csproj">
+      <Project>{ace0bd3b-929d-4078-a237-07156f041d1c}</Project>
+      <Name>bbbt.Utility.WinForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.Utility\bbbt.Utility.csproj">
+      <Project>{a0fb0429-2365-48ee-9bf3-a3e169990b1f}</Project>
+      <Name>bbbt.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.WMS.ControlService\bbbt.WMS.ControllerService.csproj">
+      <Project>{de6439f6-8118-4fb9-9f1b-51d8d9cb2a63}</Project>
+      <Name>bbbt.WMS.ControllerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.WMS.Entities\bbbt.WMS.Entities.csproj">
+      <Project>{4bed9bb0-5c25-4a63-9d0a-af4d6457a4f9}</Project>
+      <Name>bbbt.WMS.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.WMS.IControlService\bbbt.WMS.IControllerService.csproj">
+      <Project>{8026635c-82ec-4138-97eb-65e4e6e5f898}</Project>
+      <Name>bbbt.WMS.IControllerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.WMS.IService\bbbt.WMS.IService.csproj">
+      <Project>{3c24c357-fa07-4f48-86f2-402bddc24984}</Project>
+      <Name>bbbt.WMS.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bbbt.WMS.ServiceFactory\bbbt.WMS.ServiceFactory.csproj">
+      <Project>{75e8ee6d-99fc-49bd-b8c9-bd488afae023}</Project>
+      <Name>bbbt.WMS.ServiceFactory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\SkuScanDetail.datasource" />
+    <None Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CellsControl\BaseCellControl.resx">
+      <DependentUpon>BaseCellControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CellsControl\TwoHundredCellsControl.resx">
+      <DependentUpon>TwoHundredCellsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CellsControl\OneoHundredFiftyCellsControl.resx">
+      <DependentUpon>OneoHundredFiftyCellsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CellsControl\OneoHundredCellsControl.resx">
+      <DependentUpon>OneoHundredCellsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeWallDia.resx">
+      <DependentUpon>ChangeWallDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptionRecordDiaForSecondPickup.resx">
+      <DependentUpon>ExceptionRecordDiaForSecondPickup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifySkuQtyDialog.resx">
+      <DependentUpon>ModifySkuQtyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanDetailDia.resx">
+      <DependentUpon>ScanDetailDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanPickupCarDia.resx">
+      <DependentUpon>ScanPickupCarDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanWallDia.resx">
+      <DependentUpon>ScanWallDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondEachPickupByLPNForm.resx">
+      <DependentUpon>SecondEachPickupByLPNForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupScanRate.resx">
+      <DependentUpon>SetupScanRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetupDialog.resx">
+      <DependentUpon>SetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThrowErrorDia.resx">
+      <DependentUpon>ThrowErrorDia.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
